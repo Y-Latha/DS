@@ -1,0 +1,10 @@
+show databases;
+create table student( s_id char(6) not null,s_name varchar(20) not null,s_dob date not null,s_email varchar(20),s_phone varchar(20) not null,s_address varchar(20),s_age int, primary key (s_id), unique(s_phone));
+explain student;
+drop table student;
+use first_db;
+insert into student(s_id,s_name,s_dob,s_email,s_phone,s_address,s_age) values ("S001","Samuel", "2001-10-19","abc@gmail.com","53453454323","djfaskjfkasj",21);
+#SELECT * From Student;
+#insert into student(s_id,s_name,s_dob,s_email,s_phone,s_address,s_age) values ("S002","Martin",13/12/2001,"dec@gmail.com","53486784323","dhjgdhjgasj",21),("S003","Max",30/06/2001,"max@gmail.com","5348908123","dhkfjalkjsj",21),("S004","Tom",17/02/2001,"tom@gmail.com","5387984323","dcnvzxcbvrtidhjgasj",22),("S005","Andrew",23/04/2002,"and@gmail.com","55556784323","jkjioyuygdhjgasj",21),("S006","Neil",19/10/2003,"Neil@gmail.com","53867808793","dhjgdhjqwerwuiotuj",20);
+#update student set s_dob = "2001-02-11"  where s_name = "Samuel";
+#update student set s_age = 22  where s_name = "Samuel";

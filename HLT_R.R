@@ -23,7 +23,7 @@ print (df)
 
 #fourth task:Create a simple bar plot of five subjects
 
-marks<-c(89,78,90,94,99)
+marks<-c(89,78,80,94,99)
 students<-c("Millie","Dan","Aamina","Kavya","Neha")
 barplot(marks)
 barplot(marks,xlab="Student names",ylab="Marks obtained",main="Exam Results",names.arg=students,col="yellow")
